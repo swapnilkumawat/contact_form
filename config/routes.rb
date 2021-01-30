@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   get '/change-locale', to: 'contacts#change_locale'
 
+  get '(*any)' , to: redirect('/contacts')
+
 end

@@ -4,6 +4,17 @@
 <div class="container-contact100">
   <div class="wrap-contact100">
     <%= form_for @contact, html: { class: "contact100-form validate-form"} do |f| %>
+      <% if @contact.errors.any? %>
+        <div id="error_explanation">
+          <h3><%= pluralize(@contact.errors.count, "error") %> prohibited this message from being sent:</h3>
+
+          <ul>
+          <% @contact.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
       <span class="contact100-form-title">
         <%= t :send_us_a_message %>
       </span>

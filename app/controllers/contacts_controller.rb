@@ -8,8 +8,10 @@ class ContactsController < ApplicationController
     @contact = Contact.new(contact_params)
     if @contact.save
       flash[:notice] = t :message_sent_successfully
+      redirect_to contacts_path
+    else
+      render 'new'
     end
-    redirect_to contacts_path
   end
 
   def change_locale
