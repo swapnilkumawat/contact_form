@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   post '/contacts', to: 'contacts#create'
 
+  get '/change-locale', to: 'contacts#change_locale'
+
 end

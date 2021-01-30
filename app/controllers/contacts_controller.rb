@@ -12,6 +12,14 @@ class ContactsController < ApplicationController
     redirect_to contacts_path
   end
 
+  def change_locale
+    I18n.default_locale = params[:locale].to_sym
+    @contact = Contact.new
+    respond_to do |format|
+      format.js
+    end
+  end
+
   private
 
   def contact_params

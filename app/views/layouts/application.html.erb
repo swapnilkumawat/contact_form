@@ -40,6 +40,20 @@
         minimumResultsForSearch: 20,
         dropdownParent: $('#dropDownSelect1')
       });
+
+      $('#change_locale').on('change', function(){
+        var locale = $(this).val();
+        $.ajax({
+          type: 'GET',
+          url: '/change-locale',
+          data: { 'locale': locale },
+          dataType: "script",
+          success: function () {
+          },
+          error: function () {
+          }
+        });
+      });
     </script>
     <script src="vendor/daterangepicker/moment.min.js"></script>
     <script src="vendor/daterangepicker/daterangepicker.js"></script>
