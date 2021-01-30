@@ -7,7 +7,7 @@ class Contact < ApplicationRecord
   after_create :send_mail
 
   def send_mail
-   ContactMailer.message(self.id)
+    ContactMailer.new_message(self.id).deliver_now
   end
 
 end
