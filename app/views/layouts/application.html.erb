@@ -23,6 +23,12 @@
   </head>
 
   <body>
+    <% if notice %>
+      <p class="notice alert alert-success" role="alert"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger" role="alert"><%= alert %></p>
+    <% end %>
     <%= yield %>
     <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	  <script src="vendor/animsition/js/animsition.min.js"></script>

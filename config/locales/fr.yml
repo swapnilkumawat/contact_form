@@ -1,0 +1,22 @@
+fr:
+  send_us_a_message: 'Envoie-nous un message'
+  address: "Adresse"
+  address_info: "Mada Center 8. Stock, 379 Hudson St, New York, NY 10018 US"
+  lets_talk: "Parlons"
+  general_support: "Support général"
+  write_us_a_message: 'Écrivez-nous un message'
+  tell_us_your_name: "Dites-nous votre nom *"
+  enter_your_email: "Entrer votre Email *"
+  enter_phone_number: "Entrez le numéro de téléphone"
+  message: "Message *"
+  send_message: "Envoyer le message"
+  type_first_name: 'Tapez le prénom'
+  type_last_name: 'Tapez le nom'
+  valid_email_is_required: 'Une adresse e-mail valide est requise'
+  message_is_required: 'Le message est requis'
+  message_sent_successfully: "Le message a été envoyé avec succès."
+  activerecord:
+    attributes:
+      contact:
+        first_name: 'Prénom'
+        last_name: 'Nom de famille'

@@ -30,4 +30,24 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  send_us_a_message: 'Send Us A Message'
+  address: "Address"
+  address_info: "Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US"
+  lets_talk: "Lets Talk"
+  general_support: "General Support"
+  write_us_a_message: 'Write us a message'
+  tell_us_your_name: "Tell us your name *"
+  enter_your_email: "Enter your email *"
+  enter_phone_number: "Enter phone number"
+  message: "Message *"
+  send_message: "Send Message"
+  type_first_name: 'Type first name'
+  type_last_name: 'Type last name'
+  valid_email_is_required: 'Valid email is required'
+  message_is_required: 'Message is required'
+  message_sent_successfully: "Message was sent successfully."
+  activerecord:
+    attributes:
+      contact:
+        first_name: 'First name'
+        last_name: 'Last name'
